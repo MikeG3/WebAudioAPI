@@ -36,7 +36,8 @@ var grayColor = 0;
 var incrementing = true;
 
 //SOUND
-var soundWave;
+var audio = new AudioContext();
+var wave = audio.createOscillator();
 
 /*
 soundWave = new P5.Oscillator();
