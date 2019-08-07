@@ -118,7 +118,7 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     }//close if
     //COLOR CURRENT POSITION SQUARE
     if ( j == xPos && i == yPos ){
-      c.fillStyle = '#001625';
+      c.fillStyle = '#0a1625';
     }//close if selected position square
       
     //DRAW EACH RECTANGLE IN THE LOOPS
