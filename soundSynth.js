@@ -54,10 +54,10 @@ window.addEventListener('keydown', playSound );
 
 //FUNCTIONS
 function move(key) {
-    if (key.keyCode == 37) {xPos = (xPos-1)%gridSizeX; if (xPos < 0) { xPos += gridSizeX; } }
-    if (key.keyCode == 39) {xPos = (xPos+1)%gridSizeX; if (xPos > gridSizeX) { xPos -= gridSizeX; } }
-    if (key.keyCode == 38) {yPos = (yPos-1)%gridSizeY; if (yPos < 0) { yPos += gridSizeY; } }
-    if (key.keyCode == 40) {yPos = (yPos+1)%gridSizeY; if (yPos > gridSizeY) { yPos -= gridSizeY; } }
+    if (key.keyCode == 37) {xPos = (xPos-1); if (xPos < 0) { xPos += gridSizeX; } }
+    if (key.keyCode == 39) {xPos = (xPos+1); if (xPos > gridSizeX) { xPos -= gridSizeX; } }
+    if (key.keyCode == 38) {yPos = (yPos-1); if (yPos < 0) { yPos += gridSizeY; } }
+    if (key.keyCode == 40) {yPos = (yPos+1); if (yPos > gridSizeY) { yPos -= gridSizeY; } }
 }//close move function
 
 function playSound(){
