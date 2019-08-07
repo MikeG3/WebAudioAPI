@@ -73,7 +73,7 @@ function playSound(){
 
 function setUp() {
     //PROMPT FOR CHRMOE AUDIO
-    alert("AUDIO COMING!);
+    alert("AUDIO COMING!");
     wave.start();
   //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
   for (i = 0 ; i < gridSizeY ; i++) {
