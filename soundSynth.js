@@ -75,6 +75,8 @@ function setUp() {
          }//close for j
     }//close for i
     setUpRequired = false;
+    //ADD PROMPT SO THAT SOUND WORKS WITH CHROME
+    alert("There will be sound playing on this site");
 }//close setup function
                             
 function animate() {
