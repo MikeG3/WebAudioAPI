@@ -55,9 +55,9 @@ window.addEventListener('keydown', playSound );
 //FUNCTIONS
 function move(key) {
     if (key.keyCode == 37) {xPos = (xPos-1); if (xPos < 0) { xPos = gridSizeX-1; } }
-    if (key.keyCode == 39) {xPos = (xPos+1); if (xPos > gridSizeX) { xPos = 1; } }
+    if (key.keyCode == 39) {xPos = (xPos+1); if (xPos == gridSizeX) { xPos = 0; } }
     if (key.keyCode == 38) {yPos = (yPos-1); if (yPos < 0) { yPos = gridSizeY-1; } }
-    if (key.keyCode == 40) {yPos = (yPos+1); if (yPos > gridSizeY) { yPos = 1; } }
+    if (key.keyCode == 40) {yPos = (yPos+1); if (yPos == gridSizeY) { yPos = 0; } }
 }//close move function
 
 function playSound(){
