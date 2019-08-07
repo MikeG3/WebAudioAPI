@@ -1,1 +1,10 @@
 
+body{
+ margin: 0; 
+ padding: 0;
+}
+canvas {
+  background-color: black;
+  color: #003366;
+  /*border: 10px solid blue;  */
+}
