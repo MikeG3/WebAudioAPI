@@ -110,8 +110,11 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     else {
         c.fillStyle = 'blue';
     }//close else
-    
-    //COLOR SELECTED SQUARE
+    //COLOR SELECTED SQUARES
+    if ( selectedSquares[i][j] ) {
+        c.fillStyle = 'green';
+    }//close if
+    //COLOR CURRENT POSITION SQUARE
     if ( j == xPos && i == yPos ){
       c.fillStyle = '#001625';
     }//close if selected position square
