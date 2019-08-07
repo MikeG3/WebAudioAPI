@@ -24,6 +24,7 @@ var yPos = 8;
 var gridSizeX = 30;     //index i 0-29
 var gridSizeY = 30;     //index i 0-29
 var squareSize = 15;
+var selectedSquares = [gridSizeY];  //2D grid with boolean values
 var aSquareR = 0;
 var aSquareG = 0;
 var aSquareB = 0;
@@ -34,23 +35,17 @@ var bSquareB = 0;
 var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
+var setUpRequired = true;
 
 //SOUND
 var audio = new AudioContext();
 var wave = audio.createOscillator();
 
-/*
-soundWave = new P5.Oscillator();
-soundWave.setType('sine');
-soundWave.start();
-soundWave.amp(0.5);
-soundWave.frequency(220);
-*/
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
 window.addEventListener('keydown', move );
 canvas.addEventListener('keydown', move );
-window.addEventListener('keydown', playSound );
+//window.addEventListener('keydown', playSound );
 
 //FUNCTIONS
 function move(key) {
@@ -65,9 +60,26 @@ function playSound(){
         
     }//close if
 }//close function play sound
+
+function setUp() {
+  //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
+  for (i = 0 ; i < gridSizeY ; i++) {
+        //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
+        selectedSquares[i] = new Array(); 
+        for (j = 0 ; j < gridSizeX ; j++) {
+             selectedSquares[i].push(false);
+         }//close for j
+    }//close for i
+    setUpRequired = false;
+}//close setup function
                             
 function animate() {
-  
+    
+  //SETUP ANIMATION
+  if (setUpRequired){
+    setUp();
+  }//close if
+    
   //LOCAL VARIABLES 
   
  //CHECKERED BOARD
@@ -94,7 +106,7 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     }//close if
     else {
         c.fillStyle = 'blue';
-    }
+    }//close else
     
     //COLOR SELECTED SQUARE
     if ( j == xPos && i == yPos ){
