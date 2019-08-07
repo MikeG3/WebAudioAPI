@@ -49,7 +49,7 @@ alert("There will be sound playing on this site 3");
 var audio = new AudioContext();
 var wave = audio.createOscillator();
 wave.connect(audio.destination);
-wave.start();
+
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
 window.addEventListener('keydown', move );
@@ -72,6 +72,9 @@ function playSound(){
 }//close function play sound
 
 function setUp() {
+    //PROMPT FOR CHRMOE AUDIO
+    alert("AUDIO COMING!);
+    wave.start();
   //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
   for (i = 0 ; i < gridSizeY ; i++) {
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
