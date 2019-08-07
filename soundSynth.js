@@ -74,7 +74,7 @@ function startAll(){
 
 function setUp() {
     //PROMPT FOR CHRMOE AUDIO
-    alert("AUDIO COMING!");   
+    //alert("AUDIO COMING!");   
     var audio = new AudioContext();
     var wave = audio.createOscillator();
     wave.connect(audio.destination);
