@@ -39,9 +39,11 @@ var grayColor = 0;
 var incrementing = true;
 var setUpRequired = true;
 
-alert("There will be sound playing on this site");
-alert("There will be sound playing on this site");
-alert("There will be sound playing on this site");
+
+ //ADD PROMPT SO THAT SOUND WORKS WITH CHROME
+alert("There will be sound playing on this site 1");
+alert("There will be sound playing on this site 2");
+alert("There will be sound playing on this site 3");
 
 //SOUND
 var audio = new AudioContext();
@@ -79,8 +81,6 @@ function setUp() {
          }//close for j
     }//close for i
     setUpRequired = false;
-    //ADD PROMPT SO THAT SOUND WORKS WITH CHROME
-    alert("There will be sound playing on this site");
 }//close setup function
                             
 function animate() {
