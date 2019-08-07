@@ -66,6 +66,7 @@ function playSound(){
 
 //REQUIRED USER INTERATION SO THAT SOUND WORKS WITH CHROME
 function startAll(){
+    alert("STARTING AUDIO");
     animate();
 }//close start all
 
