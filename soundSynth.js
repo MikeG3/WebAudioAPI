@@ -40,9 +40,9 @@ var incrementing = true;
 var setUpRequired = true;
 
 //ADD PROMPT SO THAT SOUND WORKS WITH CHROME
-alert("There will be sound playing on this site 1");
-alert("There will be sound playing on this site 2");
-alert("There will be sound playing on this site 3");
+// alert("There will be sound playing on this site 1");
+// alert("There will be sound playing on this site 2");
+// alert("There will be sound playing on this site 3");
 
 //SOUND
 var audio;
