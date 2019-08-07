@@ -110,7 +110,7 @@ for (i = 0 ; i < gridSizeY ; i++ ){
       c.fillStyle = 'pink';
     }//close if
     else {
-        c.fillStyle = 'blue';
+        c.fillStyle = '#2112fd';
     }//close else
     //COLOR SELECTED SQUARES
     if ( selectedSquares[i][j] ) {
