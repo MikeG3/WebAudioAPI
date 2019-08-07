@@ -116,7 +116,7 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     if ( selectedSquares[i][j] ) {
         c.fillStyle = '#19ff70';
     }//close if
-    if ( (selectedSquares[i][j]&&i%2 == 0&& %2 ==0) || (selectedSquares[i][j]&&i%2 == 1&&j%2 == 1)   ) {
+    if ( (selectedSquares[i][j]&&i%2 == 0&&j%2 ==0) || (selectedSquares[i][j]&&i%2 == 1&&j%2 == 1)   ) {
         c.fillStyle = '#60dd50';
     }//close if  
     //COLOR CURRENT POSITION SQUARE
