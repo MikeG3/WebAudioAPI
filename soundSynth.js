@@ -4,7 +4,7 @@ USING WEB AUDIO API TO CREATE A SOUND SYNTHESIZER
 
 DESIGNED AND CREATED BY MICHAEL GARNER
 MONTREAL 2019
-* 
+*/ 
 
 //canvas can now be called by this variable
 var canvas = document.querySelector('canvas');
