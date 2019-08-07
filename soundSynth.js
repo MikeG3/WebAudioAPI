@@ -39,17 +39,14 @@ var grayColor = 0;
 var incrementing = true;
 var setUpRequired = true;
 
-
 //ADD PROMPT SO THAT SOUND WORKS WITH CHROME
 alert("There will be sound playing on this site 1");
 alert("There will be sound playing on this site 2");
 alert("There will be sound playing on this site 3");
 
 //SOUND
-var audio = new AudioContext();
-var wave = audio.createOscillator();
-wave.connect(audio.destination);
-
+var audio;
+var wave;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
 window.addEventListener('keydown', move );
@@ -73,7 +70,10 @@ function playSound(){
 
 function setUp() {
     //PROMPT FOR CHRMOE AUDIO
-    alert("AUDIO COMING!");
+    alert("AUDIO COMING!");   
+    var audio = new AudioContext();
+    var wave = audio.createOscillator();
+    wave.connect(audio.destination);
     wave.start();
   //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
   for (i = 0 ; i < gridSizeY ; i++) {
