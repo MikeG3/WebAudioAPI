@@ -68,6 +68,10 @@ function playSound(){
     }//close if
 }//close function play sound
 
+function startAll(){
+    animate();
+}//close start all
+
 function setUp() {
     //PROMPT FOR CHRMOE AUDIO
     alert("AUDIO COMING!");   
@@ -146,4 +150,4 @@ requestAnimationFrame(animate);
 console.log(canvas);
 };//CLOSE ANIMATION FUNCTION DEFINTION
 
-animate();
+//animate();
