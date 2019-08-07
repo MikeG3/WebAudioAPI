@@ -39,6 +39,10 @@ var grayColor = 0;
 var incrementing = true;
 var setUpRequired = true;
 
+alert("There will be sound playing on this site");
+alert("There will be sound playing on this site");
+alert("There will be sound playing on this site");
+
 //SOUND
 var audio = new AudioContext();
 var wave = audio.createOscillator();
