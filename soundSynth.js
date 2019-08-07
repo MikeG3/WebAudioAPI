@@ -114,7 +114,7 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     }//close else
     //COLOR SELECTED SQUARES
     if ( selectedSquares[i][j] ) {
-        c.fillStyle = '#191919';
+        c.fillStyle = '#19ff70';
     }//close if
     //COLOR CURRENT POSITION SQUARE
     if ( j == xPos && i == yPos ){
