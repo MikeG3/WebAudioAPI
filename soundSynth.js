@@ -43,12 +43,12 @@ var setUpRequired = true;
 //SOUND
 var audio = new AudioContext();
 var wave = audio.createOscillator();
-
+wave.connect(audio.destination);
+wave.start();
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
 window.addEventListener('keydown', move );
 canvas.addEventListener('keydown', move );
-//window.addEventListener('keydown', playSound );
 
 //FUNCTIONS
 function move(key) {
