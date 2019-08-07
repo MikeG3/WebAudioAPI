@@ -39,11 +39,6 @@ var grayColor = 0;
 var incrementing = true;
 var setUpRequired = true;
 
-//ADD PROMPT SO THAT SOUND WORKS WITH CHROME
-// alert("There will be sound playing on this site 1");
-// alert("There will be sound playing on this site 2");
-// alert("There will be sound playing on this site 3");
-
 //SOUND
 var audio;
 var wave;
@@ -68,6 +63,8 @@ function playSound(){
     }//close if
 }//close function play sound
 
+
+//REQUIRED USER INTERATION SO THAT SOUND WORKS WITH CHROME
 function startAll(){
     animate();
 }//close start all
