@@ -41,7 +41,7 @@ var setUpRequired = true;
 
 //SOUND
 var audio;
-var wave;
+var wave[gridSizeY];
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
 window.addEventListener('keydown', move );
@@ -56,13 +56,6 @@ function move(key) {
     //TOGGLE SELECTED SQUARE
     if (key.keyCode == 13) { selectedSquares[yPos][xPos] = !selectedSquares[yPos][xPos]; }
 }//close move function
-
-function playSound(){
-     if (key.keyCode > 0) {
-        
-    }//close if
-}//close function play sound
-
 
 //REQUIRED USER INTERATION SO THAT SOUND WORKS WITH CHROME
 function startAll(){
