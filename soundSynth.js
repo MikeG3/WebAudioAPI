@@ -72,7 +72,7 @@ function setUp() {
     //INITIALIZE OSCVILLATORS
     wave[i] = audio.createOscillator();
     wave[i].connect(audio.destination);
-    wave[i].start();
+    wave[i].frequency = i*50+350;
     //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
     selectedSquares[i] = new Array(); 
     for (j = 0 ; j < gridSizeX ; j++) {
