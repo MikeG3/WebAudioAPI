@@ -41,7 +41,7 @@ var setUpRequired = true;
 
 //SOUND
 var audio;
-var wave[gridSizeY];
+var wave = [gridSizeY];
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
 window.addEventListener('keydown', move );
