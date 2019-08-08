@@ -130,6 +130,12 @@ for (i = 0 ; i < gridSizeY ; i++ ){
       
     //DRAW EACH RECTANGLE IN THE LOOPS
     c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
+      
+    //PLAY SOUND
+    if (selectedSquare[i][j]){
+      wave[i].start();
+    }//close if selected square play sound
+      
   }//close inner for loop
 }//close outter for loop
  
