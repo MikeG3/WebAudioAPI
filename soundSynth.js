@@ -71,21 +71,22 @@ function startAll(){
 }//close start all
 
 function setUp() {
-    //PROMPT FOR CHRMOE AUDIO
-    //alert("AUDIO COMING!");   
-    var audio = new AudioContext();
-    var wave = audio.createOscillator();
-    wave.connect(audio.destination);
-    wave.start();
+  //PROMPT FOR CHRMOE AUDIO
+  //alert("AUDIO COMING!");   
+  var audio = new AudioContext();
   //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
   for (i = 0 ; i < gridSizeY ; i++) {
-        //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
-        selectedSquares[i] = new Array(); 
-        for (j = 0 ; j < gridSizeX ; j++) {
-             selectedSquares[i].push(false);
-         }//close for j
-    }//close for i
-    setUpRequired = false;
+    //INITIALIZE OSCVILLATORS
+    wave[i] = audio.createOscillator();
+    wave[i].connect(audio.destination);
+    wave[i].start();
+    //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
+    selectedSquares[i] = new Array(); 
+    for (j = 0 ; j < gridSizeX ; j++) {
+        selectedSquares[i].push(false);
+    }//close for j
+  }//close for i
+  setUpRequired = false;
 }//close setup function
                             
 function animate() {
