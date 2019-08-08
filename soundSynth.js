@@ -65,7 +65,6 @@ function startAll(){
 
 function setUp() {
   //PROMPT FOR CHRMOE AUDIO
-  //alert("AUDIO COMING!");   
   var audio = new AudioContext();
   //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
   for (i = 0 ; i < gridSizeY ; i++) {
