@@ -132,7 +132,7 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
       
     //PLAY SOUND
-    if (selectedSquare[i][j]){
+    if (selectedSquares[i][j]){
       wave[i].start();
     }//close if selected square play sound
       
